@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        .button {
-            background: linear-gradient(to right, #fff, #e6e6e6);
-            border: none;
-            color: #333;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 25px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-        }
-        .button:hover {
-            box-shadow: 0 12px 24px 0 rgba(0,0,0,0.4);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KISLAY | Data Science Portfolio</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: #333;
+    }
+    header {
+        background-color: #222;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-right: 20px; /* Spacing between image and text */
+    }
+    .header img {
+        text-align: right;
+    }
+    .header-info {
+        text-align: left; /* Align text to the left */
+        flex-grow: 1;
+        line-height: 1.5; /* Adjusts the line height for better readability */
+    }
+    .header-info h1, .header-info p {
+        margin: 0; /* Removes default margin */
+    }
+    .portfolio-title { /* Specific class for the portfolio title */
+        font-size: 30px; /* Larger font size */
+        margin-bottom: 10px; /* Adds some space below the title */
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .blog-post {
+        background: #555;
+        padding: 15px;
+        border-radius: 8px;
+        width: 45%;
+        overflow: hidden; /* Prevents content from overflowing */
+    }
+    .blog-post img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    footer {
+        font-size: 14px;
+        text-align: center; /* Centers footer content */
+        padding: 10px; /* Padding around the footer */
+        background-color: #222; /* Footer background color */
+    }
+    a {
+        color: #1a73e8;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body>
-    <img src="Snapseed.JPG" alt="Profile Picture">
-    <h1>Welcome To My Portfolio</h1>
-    <p>Hello !</p>
-    <a href="Kislay.Kislay_Resume.pdf" class="button">Resume</a>
-    <a href="Kislay_Cover_Letter.pdf" class="button">Cover Letter</a>
+<header>
+    <img src="Snapseed.JPG" alt="Kislay">
+    <div class="header-info">
+        <h1>Kislay</h1>
+        <p class="portfolio-title">Data Science Portfolio</p>
+        <p>I am an aspiring Data Scientist building up my portfolio which focuses on interesting and impactful projects that I have undertaken recently.</p>
+        <p>New York, USA | <a href="https://github.com/kislay09">GitHub</a> | <a href="https://www.linkedin.com/in/kkislay">LinkedIn</a> 
+            | <a href="https://kislay09.github.io/Kislay.Kislay_Resume.pdf">Resume</a> | <a href="https://kislay09.github.io/Kislay_Cover_Letter.pdf">Cover Letter</a></p>
+    </div>
+</header>
+<div class="container">
+    <a href="path_to_jekyll_project_page.html" class="blog-post" style="text-decoration: none; color: inherit;">
+        <div>
+            <img src="twitter-sentiment-analysis.jpeg" alt="Sentiment Analysis">
+            <h2>Product Sentiment Analysis of iPhone</h2>
+            <p>Analyzed consumer sentiment on the iPhone using NLP techniques, providing key market insights to inform strategic marketing decisions.</p>
+        </div>
+    </a>
+    <a href="deeplearning.html" class="blog-post" style="text-decoration: none; color: inherit;">
+        <div>
+            <img src="covid.jpeg" alt="Statistical Data Analysis">
+            <h2>Data Analysis Using Statistical Methods</h2>
+            <p>Led a detailed statistical analysis of over 15,000 COVID-19 case healthcare data points to identify demographic risks and support public health initiatives.</p>
+        </div>
+    </a>
+</div>
+<footer>
+    <p>© 2020 KISLAY </p>
+    <p><a href="#">Previous projects</a> | <a href="#">Feed</a></p>
+</footer>
 </body>
 </html>
