@@ -1250,12 +1250,12 @@ ul.slides li {
 }
 
 .counter-container h1 {
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 
 #visitor-counter {
     font-size: 2em;
     font-weight: bold;
     color: #333;
-    margin-top: 1px;
+    margin-top: 10px;
 }
