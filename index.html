@@ -459,10 +459,21 @@
 		
 	<!-- Counter -->
 <div class="counter-container">
-  <p>You are visitor number:</p>
-  <div id="visitor-counter"></div>
+  <p>You are visitor:</p>
+  <div id="visitor-counter">Loading...</div>
 </div>
-<script src="/js/script.js"></script>	
+
+<script>
+  // Fetch the visitor count from the PHP script
+  fetch('counter.php')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('visitor-counter').innerText = data;
+    })
+    .catch(error => {
+      console.error('Error fetching visitor count:', error);
+    });
+</script>	
 	    <!-- Counter End -->
 		
 		<!-- ==========================
